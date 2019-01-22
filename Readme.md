@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Николай Румянцев](https://up.htmlacademy.ru/htmlcss/24/user/234024).
-* Наставник: [Сергей Вервинский](https://htmlacademy.ru/profile/id13802).
+* Наставник: [Сергей Вервинский](https://up.htmlacademy.ru/htmlcss/24/user/13802).
 
 ---
 
