@@ -25,24 +25,55 @@
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
       <section class="template-directory">
         <h2 class="visually-hidden">Примеры готовых шаблонов</h2>
-        <div class="template-filter">
-          <!-- Здесь будет фильтр -->
-          <h3 class="template-filter-title">Сетка:</h3>
-          <ul class="template-filter-grid">
-            <li>Адаптивная</li>
-            <li>Фиксированная</li>
-            <li>Резиновая</li>
-          </ul>
-          <h3 class="template-filter-title">Особенности:</h3>
-          <ul class="template-filter-features">
-            <li>Слайдер</li>
-            <li>Блок преимуществ</li>
-            <li>Новости</li>
-            <li>Галерея</li>
-            <li>Корзина</li>
-          </ul>
-          <span class="button template-filter-button">Показать</span>
-        </div>
+        <section class="template-filter">
+          <h3 class="visually-hidden">Фильтр товаров</h3>
+          <form action="https://echo.htmlacademy.ru" class="filter-options" method="get">
+            <!-- Здесь будет фильтр стоимости -->
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul class="template-filter-grid">
+                <li>
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" name="filter-grid" value="adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio" id="filter-fixed" name="filter-grid" value="fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" class="visually-hidden filter-input filter-input-radio" id="filter-rubber" name="filter-grid" value="rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul class="template-filter-features">
+                <li>
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" name="filter-features" value="slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-advantage" name="filter-features" value="advantage">
+                  <label for="filter-advantage">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-news" name="filter-features" value="news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery" name="filter-features" value="gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-cart" name="filter-features" value="cart">
+                  <label for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter-button" type="submit">Показать</button>
+          </form>
+        </section>
         <div class="template-examples">
           <!-- Здесь будет блок сортировки -->
           <ul class="template-examples-list">
@@ -98,6 +129,25 @@
         </div>
       </section>
       <!-- Здесь будет блок пагинации и контакты -->
+      <section class="modal-write-us">
+        <h2 class="modal-title">Напишите нам</h2>
+        <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" class="form-name" id="your-name" name="user-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="your-email">Ваш e-mail:</label>
+            <input type="email" class="form-email" id="your-email" name="user-email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="your-letter">Текст письма:</label>
+            <input type="text" class="form-letter" id="your-letter" name="user-letter" placeholder="В свободной форме">
+          </p>
+          <button class="form-button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
