@@ -31,7 +31,7 @@
             <!-- Здесь будет фильтр стоимости -->
             <fieldset>
               <legend>Сетка:</legend>
-              <ul class="template-filter-grid">
+              <ul class="template-filter-options">
                 <li>
                   <input type="radio" class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" name="filter-grid" value="adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
@@ -48,7 +48,7 @@
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
-              <ul class="template-filter-features">
+              <ul class="template-filter-options">
                 <li>
                   <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" name="filter-features" value="slider" checked>
                   <label for="filter-slider">Слайдер</label>
@@ -82,7 +82,7 @@
                 <p class="template-example-content">
                  <a class="template-example-link"><b>Sedona</b></a>
                  <span>Информационный сайт для туристов</span>
-                 <span class="button template-example-button">9 900 руб.</span>
+                 <a href="" class="button template-example-button">9 900 руб.</a>
                 </p>
              </li>
              <li class="template-example">
@@ -90,7 +90,7 @@
                 <p class="template-example-content">
                  <a class="template-example-link"><b>Pink App</b></a>
                  <span>Продуктовый лендинг приложения для iOS и Android</span>
-                 <span class="button template-example-button">9 900 руб.</span>
+                 <a href="" class="button template-example-button">9 900 руб.</a>
                 </p>
              </li>
              <li class="template-example">
@@ -98,7 +98,7 @@
                 <p class="template-example-content">
                  <a class="template-example-link"><b>Barbershop</b></a>
                  <span>Сайт салона красоты. Для мужчин, да.</span>
-                 <span class="button template-example-button">9 900 руб.</span>
+                 <a href="" class="button template-example-button">9 900 руб.</a>
                 </p>
              </li>
              <li class="template-example">
@@ -106,7 +106,7 @@
                 <p class="template-example-content">
                  <a class="template-example-link"><b>Mishka</b></a>
                  <span>Интернет-магазин вязаных игрушек</span>
-                 <span class="button template-example-button">9 900 руб.</span>
+                 <a href="" class="button template-example-button">9 900 руб.</a>
                 </p>
              </li>
              <li class="template-example">
@@ -114,7 +114,7 @@
                 <p class="template-example-content">
                  <a class="template-example-link"><b>A Plus</b></a>
                  <span>Лендинг курсов повышения квалификации</span>
-                 <span class="button template-example-button">9 900 руб.</span>
+                 <a href="" class="button template-example-button">9 900 руб.</a>
                 </p>
              </li>
              <li class="template-example">
@@ -122,7 +122,7 @@
                 <p class="template-example-content">
                  <a class="template-example-link"><b>Кваст</b></a>
                  <span>Промо-сайт производителя крафтового кваса</span>
-                 <span class="button template-example-button">9 900 руб.</span>
+                 <a href="" class="button template-example-button">9 900 руб.</a>
                 </p>
              </li>
            </ul>
@@ -134,26 +134,26 @@
         <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="your-name">Ваше имя:</label>
-            <input type="text" class="form-name" id="your-name" name="user-name" placeholder="Имя Фамилия">
+            <input type="text" class="form-field" id="your-name" name="user-name" placeholder="Имя Фамилия">
           </p>
           <p>
             <label for="your-email">Ваш e-mail:</label>
-            <input type="email" class="form-email" id="your-email" name="user-email" placeholder="email@example.com">
+            <input type="email" class="form-field" id="your-email" name="user-email" placeholder="email@example.com">
           </p>
           <p>
             <label for="your-letter">Текст письма:</label>
-            <input type="text" class="form-letter" id="your-letter" name="user-letter" placeholder="В свободной форме">
+            <textarea class="form-field" id="your-letter" name="user-letter" placeholder="В свободной форме"></textarea>
           </p>
           <button class="form-button" type="submit">Отправить</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close visually-hidden" type="button" aria-label="закрыть модальное окно">Закрыть</button>
       </section>
     </main>
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a href="https://vk.com">VK</a></li>
-        <li><a href="https://www.facebook.com">facebook</a></li>
-        <li><a href="https://www.instagram.com">instagram</a></li>
+        <li><a class="visually-hidden" aria-label="ссылка на Нёрдс в вконтакте" href="https://vk.com">VK</a></li>
+        <li><a class="visually-hidden" aria-label="ссылка на Нёрдс в facebook" href="https://www.facebook.com">facebook</a></li>
+        <li><a class="visually-hidden" aria-label="ссылка на Нёрдс в instagram" href="https://www.instagram.com">instagram</a></li>
       </ul>
       <p class="social-network-discount">
         <b>Давайте дружить, это выгодно!</b>
