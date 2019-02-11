@@ -68,6 +68,9 @@ body {
 .user-navigation a:active {
   opacity: 0.3;
   color: #000000;
+}
+
+.site-navigation-current a {
   border-bottom: 2px solid;
   border-color: #fb565a;
   padding-bottom: 3px;
@@ -83,11 +86,11 @@ body {
 
 /* Слайдер */
 
-.slder {
+.slider {
   background-color: #eeeeee;
 }
 
-.slder h2 {
+.slider h2 {
   color: #000000;
   font-size: 55px;
   font-weight: 500;
