@@ -1,0 +1,443 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283136;
+  background-color: #ffffff;
+}﻿
+
+  a,
+  a:link,
+  a:visited,
+  a:focus,
+  a:hover,
+  a:active {
+  text-decoration:none;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #000000;
+  border: none;
+}
+
+/* Хедер */
+
+/* Навигация */
+
+.main-navigation {
+  color: #000000;
+  line-height: 30px;
+  background-color: #eeeeee;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  opacity: 0.3;
+  color: #000000;
+  border-bottom: 2px solid;
+  border-color: #fb565a;
+  padding-bottom: 3px;
+}
+
+/* Навигация */
+
+/* Хедер */
+
+
+
+/* Главная */
+
+/* Слайдер */
+
+.slder {
+  background-color: #eeeeee;
+}
+
+.slder h2 {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.slider-button {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fb565a;
+}
+
+.slider-button:hover {
+  background-color: #e74246;
+}
+
+.slider-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.slide-switch-button {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fb565a;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Слайдер */
+
+/* Варианты работ */
+
+.work-options-list {
+  list-style: none;
+}
+
+.work-options-list li {
+  text-align: left;
+}
+
+.work-options-title {
+color: #000000;
+font-size: 24px;
+font-weight: 700;
+line-height: 30px;
+text-transform: uppercase;
+}
+
+.work-options-site-button {
+  background-color: #fb565a;
+}
+
+.work-options-site-button:hover {
+  background-color: #e74246;
+}
+
+.work-options-site-button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+.work-options-app-button {
+  background-color: #00ca74;
+}
+
+.work-options-app-button:hover {
+  background-color: #00bc6c;
+}
+
+.work-options-app-button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #00aa62;
+}
+
+.work-options-presentation-button {
+  background-color: #efc84a;
+}
+
+.work-options-presentation-button:hover {
+  background-color: #eab534;
+}
+
+.work-options-presentation-button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #e5a722;
+}
+
+.work-options-site-button:active,
+.work-options-app-button:active,
+.work-options-presentation-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Варианты работ */
+
+/* О студии Нердс */
+
+.about-our-studio b {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.carry-out-orders span {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.orders-list {
+  list-style: none;
+}
+
+.accuracy-in-everything span {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accuracy-in-everything-list {
+  list-style: none;
+}
+
+.accuracy-in-everything-list b {
+  color: #000000;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+.accuracy-in-everything-list span {
+  line-height: 18px;
+}
+
+/* О студии Нердс */
+
+/* Клиенты */
+
+.clients-list {
+  list-style: none;
+}
+
+.our-client {
+  opacity: 0.2;
+}
+
+.our-client:hover {
+  opacity: 1.0;
+}
+
+.our-client:active {
+  opacity: 0.1;
+}
+
+/* Клиенты */
+
+/* Карта и контакты */
+
+.map-and-contacts {
+  background-color: #e9e5dc;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+}
+
+.contact-with-us {
+  background-color: #ffffff;
+}
+
+.contact-with-us h2 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contact-with-us p {
+  color: #666666;
+  line-height: 18px;
+}
+
+.write-us {
+  background-color: #fb565a;
+}
+
+/* Карта и контакты */
+
+/* Главная */
+
+
+
+/* Каталог */
+
+.catalog-title {
+  color: #000000;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  background-color: #eeeeee;
+}
+
+/* Фильтр товаров */
+
+.filter-options fieldset {
+  border: none;
+}
+
+.filter-options legend {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.template-filter-options {
+  list-style: none;
+}
+
+.template-filter-options label {
+  color: #283136;
+  line-height: 20px;
+}
+
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+.filter-button {
+  color: #000000;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Фильтр товаров */
+
+/* Товары */
+
+.template-examples-list {
+  list-style: none;
+}
+
+.template-example-content {
+  color: #666666;
+  line-height: 18px;
+  background-color: #eeeeee;
+}
+
+.template-example-link {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.template-example-button {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #fb565a;
+}
+
+.template-example-button:hover {
+  background-color: #e74246;
+}
+
+.template-example-button:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+}
+
+/* Товары */
+
+/* Каталог */
+
+
+
+/* Модальное окно */
+
+.modal-write-us {
+  color: #000000;
+}
+
+.modal-title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.form-write-us label {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form-button,
+.modal-close {
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #fb565a;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Модальное окно */
+
+/* Футер */
+
+.footer-social {
+  text-align: left;
+  list-style: none;
+}
+
+.footer-social a {
+  color: #000000;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.social-network-discount b {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.social-network-discount span {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Футер */

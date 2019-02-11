@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -22,8 +25,36 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Дизайн-студии «Нердс»</h1>
-      <!-- Здесь будет слайдер -->
+      <h1 class="visually-hidden">Дизайн-студия «Нердс»</h1>
+      <div class="slder">
+        <section class="slide-one">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a class="button slider-button" href="">Узнать больше</a>
+          <img src="img/slide1.png" width="698" height="413" alt="Картинка на которой изображено три смартфона">
+        </section>
+        <section class="slide-two">
+          <h2>Любим математику как никто другой</h2>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a class="button slider-button" href="">Узнать больше</a>
+          <img src="img/slide2.png" width="663" height="430" alt="Картинка на которой изображено два монитора">
+        </section>
+        <section class="slide-three">
+          <h2>Только ночь, только хардкор</h2>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a class="button slider-button" href="">Узнать больше</a>
+          <img src="img/slide3.png" width="759" height="411" alt="Картинка на которой изображены планшетный компьютер и смартфон">
+        </section>
+        <button class="slide-switch-button" type="button" aria-label="кнопка переключения на слайд 1">
+          <span class="visually-hidden">Слайд 1</span>
+        </button>
+        <button class="slide-switch-button" type="button" aria-label="кнопка переключения на слайд 2">
+          <span class="visually-hidden">Слайд 2</span>
+        </button>
+        <button class="slide-switch-button" type="button" aria-label="кнопка переключения на слайд 3">
+          <span class="visually-hidden">Слайд 3</span>
+        </button>
+      </div>
       <section class="work-options">
         <h2 class="visually-hidden">Что мы делаем.</h2>
         <ul class="work-options-list">
@@ -47,7 +78,76 @@
           </li>
         </ul>
       </section>
-      <!-- Здесь будет описание, клиенты и контакты дизайн-студии Нердс -->
+      <div class="about-nerds">
+        <section class="about-our-studio">
+          <h2 class="visually-hidden">О нашей студии.</h2>
+          <span>
+            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          </span>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <div class="carry-out-orders">
+            <span>Выполняем заказы на разработку:</span>
+            <ul class="orders-list">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+        </section>
+        <section class="our-statistics">
+          <h2 class="visually-hidden">Статистика Нердс.</h2>
+          <img class="holiday-logo" src="img/nerds-illustration.png" width="360" height="208" alt="Праздничный логотип Нердс">
+          <div class="accuracy-in-everything">
+            <span>с 2004 года Любим точность во всем:</span>
+            <ul class="accuracy-in-everything-list">
+              <li>
+                <b>146<sup>%</sup></b>
+                <span>Уровень самоотдачи</span>
+              </li>
+              <li>
+                <b>100<sup>%</sup></b>
+                <span>Соблюдение сроков</span>
+              </li>
+              <li>
+                <b>50<sup>%</sup></b>
+                <span>Минимальная предоплата</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="clients">
+        <ul class="clients-list">
+          <li>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="our-client">
+              <img src="img/logo-1.png" width="199" height="68" alt="Логотип HTML Academy">
+            </a>
+          </li>
+          <li>
+            <a href="" class="our-client">
+              <img src="img/logo-2.png" width="209" height="90" alt="Логотип Barbershop Borodinski">
+            </a>
+          </li>
+          <li>
+            <a href="" class="our-client">
+              <img src="img/logo-3.png" width="185" height="52" alt="Логотип PINK">
+            </a>
+          </li>
+          <li>
+            <a href="" class="our-client">
+              <img src="img/logo-4.png" width="173" height="84" alt="Логотип MISHKA">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="map-and-contacts">
+        <section class="contact-with-us">
+          <h2>Nёrds design studio</h2>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a href="" class="button write-us">Напишите нам</a>
+        </section>
+      </div>
       <section class="modal-write-us">
         <h2 class="modal-title">Напишите нам</h2>
         <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
