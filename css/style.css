@@ -28,6 +28,14 @@ body {
   border: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* Хедер */
 
 /* Навигация */
@@ -35,7 +43,6 @@ body {
 .main-navigation {
   color: #000000;
   line-height: 30px;
-  background-color: #eeeeee;
 }
 
 .main-header-logo:hover {
@@ -88,6 +95,7 @@ body {
 
 .slider {
   background-color: #eeeeee;
+  margin-bottom: 50px;
 }
 
 .slider h2 {
@@ -114,7 +122,7 @@ body {
   background-color: #d7373b;
 }
 
-.slide-switch-button {
+.slider-switch-button {
   color: #ffffff;
   font-weight: 500;
   line-height: 18px;
@@ -258,10 +266,15 @@ text-transform: uppercase;
   background-color: #e9e5dc;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
+  padding-top: 1px;
 }
 
 .contact-with-us {
   background-color: #ffffff;
+  width: 219px;
+  min-height: 208px;
+  margin: 50px 0;
+  padding: 50px;
 }
 
 .contact-with-us h2 {
@@ -289,12 +302,17 @@ text-transform: uppercase;
 
 /* Каталог */
 
+.catalog-title-wrapper {
+  background-color: #eeeeee;
+  margin-bottom: 60px;
+}
+
 .catalog-title {
   color: #000000;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  background-color: #eeeeee;
+  text-align: center;
 }
 
 /* Фильтр товаров */
@@ -444,3 +462,159 @@ text-transform: uppercase;
 }
 
 /* Футер */
+
+
+/* Сетка главной */
+
+.main-navigation {
+  background-color: #eeeeee;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.main-header-logo {
+  width: 160px;
+}
+
+.site-navigation {
+  width: 500px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation {
+  width: 150px;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.main-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+[class*="slide-"] {
+  display: flex;
+}
+
+.work-options-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-options-content {
+  width: 250px;
+}
+
+.work-options {
+  margin-bottom: 80px;
+}
+
+.about-nerds {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.about-our-studio {
+  width: 670px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.clients {
+  margin-bottom: 50px;
+}
+
+.map-and-contacts {
+
+  min-height: 416px;
+  padding-bottom: 1px;
+}
+
+.modal-write-us {
+  width: 860px;
+  margin: 0 auto;
+  padding: 80px 100px;
+}
+
+.main-footer {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.footer-social {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-network-discount {
+  margin: 0;
+  margin-left: 130px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Сетка главной */
+
+/* Сетка каталога */
+
+.catalog-title {
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+
+.template-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.template-examples-list {
+  margin: 0;
+  padding: 0;
+  min-height: 2000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.template-examples {
+  width: 760px;
+}
+
+.template-example-content {
+  width: 360px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.template-directory {
+  margin-bottom: 60px;
+}
+
+/* Сетка каталога */
