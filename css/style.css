@@ -9,13 +9,18 @@ body {
   background-color: #ffffff;
 }﻿
 
-  a,
-  a:link,
-  a:visited,
-  a:focus,
-  a:hover,
-  a:active {
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
   text-decoration:none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .button {
@@ -28,12 +33,19 @@ body {
   border: none;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Хедер */
@@ -110,6 +122,7 @@ body {
   font-weight: 500;
   line-height: 18px;
   background-color: #fb565a;
+  text-align: center;
 }
 
 .slider-button:hover {
@@ -120,15 +133,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
-}
-
-.slider-switch-button {
-  color: #ffffff;
-  font-weight: 500;
-  line-height: 18px;
-  background-color: #fb565a;
-  text-transform: uppercase;
-  border: none;
 }
 
 /* Слайдер */
@@ -263,13 +267,27 @@ text-transform: uppercase;
 /* Карта и контакты */
 
 .map-and-contacts {
+  position: relative;
+}
+
+.map-and-contacts::before {
+  position: absolute;
+  content: "";
+  z-index: 0;
+  width: 1440px;
+  height: 416px;
+  margin-left: -140px;
   background-color: #e9e5dc;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
+}
+
+.map-and-contacts {
   padding-top: 1px;
 }
 
 .contact-with-us {
+  position: absolute;
   background-color: #ffffff;
   width: 219px;
   min-height: 208px;
@@ -477,15 +495,34 @@ text-transform: uppercase;
 }
 
 .site-navigation {
-  width: 500px;
-  margin-bottom: 0;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-right: 7px;
   display: flex;
   justify-content: space-between;
 }
 
 .user-navigation {
+  position: relative;
   width: 150px;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  text-align: right;
+}
+
+.user-navigation::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  right: 100px;
+  top: 33px;
+  background-color: #eeeeee;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -497,7 +534,7 @@ text-transform: uppercase;
 .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 49px;
 }
 
 .main-container {
@@ -505,9 +542,119 @@ text-transform: uppercase;
   margin: 0 auto;
 }
 
+/* Слайдер */
+
 [class*="slide-"] {
-  display: flex;
+  position: relative;
+  display: none;
+  padding-top: 68px;
+  padding-bottom: 80px;
 }
+
+[class*="slide-"]:nth-child(2) {
+  display: block;
+}
+
+.slider-position {
+  position: relative;
+}
+
+.slider h2 {
+  margin: 0;
+  max-width: 600px;
+  margin-bottom: 26px;
+}
+
+.slider p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.slider-button {
+  display: block;
+  width: 240px;
+  padding: 15px 0;
+  padding-top: 17px;
+  border-radius: 3px;
+}
+
+.slider-switch-button {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 18px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.slider-switch-button::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-controls {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 556px;
+  bottom: 96px;
+  z-index: 5;
+  width: 88px;
+  height: 18px;
+}
+
+.slider-controls .active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.slide-one {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 431px 8px;
+}
+
+.slide-two::before {
+  position: absolute;
+  content: "";
+  width: 663px;
+  height: 430px;
+  left: 496px;
+  top: -9px;
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+}
+
+.slide-three {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+
+/* Слайдер */
 
 .work-options-list {
   margin: 0;
@@ -546,7 +693,6 @@ text-transform: uppercase;
 }
 
 .map-and-contacts {
-
   min-height: 416px;
   padding-bottom: 1px;
 }
