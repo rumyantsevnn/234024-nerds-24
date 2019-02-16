@@ -24,10 +24,15 @@ img {
 }
 
 .button {
+  display: inline-block;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+  padding: 15px 40px;
+  padding-top: 17px;
+  border-radius: 3px;
+  text-align: center;
   text-transform: uppercase;
   background-color: #000000;
   border: none;
@@ -107,7 +112,7 @@ input[type="radio"].visually-hidden {
 
 .slider {
   background-color: #eeeeee;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .slider h2 {
@@ -117,12 +122,16 @@ input[type="radio"].visually-hidden {
   line-height: 55px;
 }
 
+.only-night {
+  letter-spacing: 1px;
+}
+
 .slider-button {
-  color: #ffffff;
   font-weight: 500;
   line-height: 18px;
   background-color: #fb565a;
-  text-align: center;
+  padding-left: 54px;
+  padding-right: 55px;
 }
 
 .slider-button:hover {
@@ -139,24 +148,30 @@ input[type="radio"].visually-hidden {
 
 /* Варианты работ */
 
-.work-options-list {
-  list-style: none;
-}
+
 
 .work-options-list li {
   text-align: left;
+  width: 300px;
 }
 
-.work-options-title {
-color: #000000;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-text-transform: uppercase;
+.work-options-img {
+  margin-bottom: 18px;
+}
+
+h3.work-options-title {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .work-options-site-button {
   background-color: #fb565a;
+  padding-right: 39px;
 }
 
 .work-options-site-button:hover {
@@ -170,6 +185,7 @@ text-transform: uppercase;
 
 .work-options-app-button {
   background-color: #00ca74;
+  padding-right: 39px;
 }
 
 .work-options-app-button:hover {
@@ -183,6 +199,7 @@ text-transform: uppercase;
 
 .work-options-presentation-button {
   background-color: #efc84a;
+  padding-right: 39px;
 }
 
 .work-options-presentation-button:hover {
@@ -551,7 +568,7 @@ text-transform: uppercase;
   padding-bottom: 80px;
 }
 
-[class*="slide-"]:nth-child(2) {
+[class*="slide-"]:nth-child(1) {
   display: block;
 }
 
@@ -561,7 +578,7 @@ text-transform: uppercase;
 
 .slider h2 {
   margin: 0;
-  max-width: 600px;
+  max-width: 520px;
   margin-bottom: 26px;
 }
 
@@ -569,14 +586,6 @@ text-transform: uppercase;
   max-width: 430px;
   margin: 0;
   margin-bottom: 39px;
-}
-
-.slider-button {
-  display: block;
-  width: 240px;
-  padding: 15px 0;
-  padding-top: 17px;
-  border-radius: 3px;
 }
 
 .slider-switch-button {
@@ -651,20 +660,28 @@ text-transform: uppercase;
 .slide-three {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 20px;
+  background-position: 100% 9px;
 }
 
 /* Слайдер */
 
 .work-options-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-between;
+  width: 1100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-nerds  {
+  padding-top: 40px;
+  border-top: 2px solid #eeeeee;
 }
 
 .work-options-content {
   width: 250px;
+  margin-bottom: 32px;
 }
 
 .work-options {
@@ -678,7 +695,33 @@ text-transform: uppercase;
 }
 
 .about-our-studio {
-  width: 670px;
+  width: 660px;
+  padding-top: 34px;
+}
+
+.about-our-studio span {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.about-our-studio p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 39px;
+}
+
+.carry-out-orders span {
+  margin-bottom: 24px;
+}
+
+.orders-list {
+  margin: 0;
+  padding: 0;
+}
+
+.orders-list li {
+  padding-left: 36px;
+  padding-bottom: 24px;
 }
 
 .clients-list {
