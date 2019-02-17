@@ -238,7 +238,7 @@ h3.work-options-title {
   list-style: none;
 }
 
-.accuracy-in-everything span {
+.accuracy-in-everything-title {
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
@@ -246,6 +246,8 @@ h3.work-options-title {
 
 .accuracy-in-everything-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .accuracy-in-everything-list b {
@@ -691,7 +693,7 @@ h3.work-options-title {
 .about-nerds {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin-bottom: 49px;
 }
 
 .about-our-studio {
@@ -720,19 +722,90 @@ h3.work-options-title {
 }
 
 .orders-list li {
+  position: relative;
   padding-left: 36px;
   padding-bottom: 24px;
 }
 
+.orders-list li::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  left: 1px;
+  top: 11px;
+  background-color: #fb565a;
+}
+
+.our-statistics {
+  width: 360px;
+}
+
+.accuracy-in-everything {
+  padding-top: 29px;
+}
+
+.accuracy-in-everything-title {
+  display: block;
+  padding-left: 17px;
+  padding-bottom: 58px;
+}
+
+.accuracy-in-everything-list {
+  display: flex;
+}
+
+.accuracy-in-everything-list li {
+  width: 100px;
+}
+
+.accuracy-in-everything-list li:nth-child(2) {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.accuracy-in-everything-list b {
+  display: block;
+  padding-bottom: 37px;
+}
+
+.accuracy-in-everything-list span {
+  display: inline-block;
+}
+
+.accuracy-in-everything-list sup {
+  font-size: 28px;
+}
+
+.clients {
+  padding: 0 31px;
+  padding-top: 46px;
+  margin-bottom: 50px;
+  border-top: 2px solid #eeeeee;
+}
+
 .clients-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
-.clients {
-  margin-bottom: 50px;
+.clients-list li:nth-child(1) {
+  padding-top: 16px;
+}
+
+.clients-list li:nth-child(2) {
+  padding-left: 96px;
+}
+
+.clients-list li:nth-child(3) {
+  padding-left: 103px;
+  padding-top: 19px;
+}
+
+.clients-list li:nth-child(4) {
+  padding-left: 121px;
+  padding-top: 6px;
 }
 
 .map-and-contacts {
