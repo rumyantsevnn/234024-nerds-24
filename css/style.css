@@ -29,7 +29,6 @@ img {
 
 .button {
   display: inline-block;
-  min-width: 80px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -73,11 +72,6 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo:active {
   opacity: 0.3;
-}
-
-.site-navigation,
-.user-navigation {
-  list-style: none;
 }
 
 .site-navigation a,
@@ -791,13 +785,31 @@ h3.work-options-title {
 
 .site-navigation {
   width: 445px;
-  min-height: 68px;
+
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.site-navigation,
+.user-navigation {
+  padding-top: 26px;
+  list-style: none;
 }
 /*
 .site-navigation li {
@@ -812,18 +824,6 @@ h3.work-options-title {
   padding: 0;
 }
 */
-.user-navigation {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  width: 150px;
-  min-height: 68px;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-  justify-content: flex-end;
-  align-items: center;
-}
 
 .user-navigation::before {
   position: absolute;
@@ -831,7 +831,7 @@ h3.work-options-title {
   width: 15px;
   height: 15px;
   right: 100px;
-  top: 26px;
+  top: 33px;
   background-color: #eeeeee;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
@@ -846,8 +846,8 @@ h3.work-options-title {
 .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  min-height: 124px;
+  align-items: flex-start;
+  padding-top: 49px;
 }
 
 .main-container {
@@ -1083,27 +1083,25 @@ h3.work-options-title {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 /*
 .clients-list li:nth-child(1) {
-  padding-top: 16px;
+  padding-top: 10px;
 }
-
+*/
 .clients-list li:nth-child(2) {
   padding-left: 96px;
 }
 
 .clients-list li:nth-child(3) {
   padding-left: 103px;
-  padding-top: 19px;
+  padding-right: 121px;
 }
-
+/*
 .clients-list li:nth-child(4) {
-  padding-left: 121px;
   padding-top: 6px;
 }
 */
@@ -1118,22 +1116,22 @@ h3.work-options-title {
   height: 52px;
   top: 50%;
   right: -51px;
-  transform: translateY(-58%);
+  transform: translateY(-50%);
   background-color: #eeeeee;
 }
 
 .clients-list li:nth-child(4)::before {
   content: none;
 }
-/*
-.clients-list li:nth-child(1)::before {
-  right: 0;
+
+.clients-list li:nth-child(2)::before {
+  right: -46px;
 }
 
 .clients-list li:nth-child(3)::before {
-  left: 44px;
+  right: 63px;
 }
-
+/*
 .clients-list li:nth-child(4)::before {
   left: 56px;
 }
@@ -1379,10 +1377,10 @@ textarea.form-field {
 
 .template-example {
   position: relative;
-  max-height: 576px;
 }
 
 .template-example img {
+  display: block;
   position: relative;
   z-index: 1;
 }
@@ -1414,26 +1412,28 @@ textarea.form-field {
   position: absolute;
   z-index: 0;
   bottom: 0;
-  width: 360px;
-  height: 231px;
+  min-width: 360px;
+  min-height: 231px;
+  max-height: 576px;
   color: #666666;
   line-height: 18px;
   background-color: #eeeeee;
   text-align: center;
   overflow-y: auto;
 }
+.template-example-content b,
+.template-example-content span {
+  overflow-y: auto;
+}
 
 .template-example:nth-child(3) .template-example-content,
 .template-example:nth-child(4) .template-example-content {
-  top: 348px;
-}
-
-.template-example:nth-child(5) .template-example-content,
-.template-example:nth-child(6) .template-example-content {
-  top: 344px;
+  min-height: 228px;
 }
 
 .template-example-link {
+  display: flex;
+  justify-content: center;
   padding-top: 27px;
   padding-bottom: 15px;
   color: #000000;
@@ -1443,16 +1443,28 @@ textarea.form-field {
   text-transform: uppercase;
 }
 
+.template-example-link b {
+  display: inline-block;
+  width: 150px;
+  min-height: 30px;
+}
+
 .template-example-content span {
   width: 250px;
   margin: 0 auto;
   margin-bottom: 30px;
+  min-height: 37px;
 }
 
 .template-example:nth-child(1) span,
 .template-example:nth-child(3) span,
 .template-example:nth-child(4) span {
   width: 190px;
+}
+
+.template-example:nth-child(5) span,
+.template-example:nth-child(6) span {
+  margin-bottom: 28px;
 }
 
 .template-example-button {
@@ -1499,7 +1511,6 @@ textarea.form-field {
 .pagination-button-next {
   padding: 0;
   margin: 0;
-  min-width: 8px;
   padding-top: 17px;
   padding-bottom: 15px;
   padding-right: 21px;
