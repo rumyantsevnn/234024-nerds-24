@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -167,15 +167,16 @@
               <label for="your-letter">Текст письма:</label>
               <textarea class="form-field" id="your-letter" name="user-letter" placeholder="В свободной форме"></textarea>
             </p>
-            <a href="" class="button form-button">Отправить</a>
+            <a href="/form.html" class="button form-button">Отправить</a>
           </form>
           <button class="modal-close" type="button" aria-label="закрыть модальное окно"><span class="visually-hidden">Закрыть</span></button>
         </section>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <div class="map-and-contacts">
+      <div class="map-and-contacts">
+        <iframe class="interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6106515646047!2d30.31998495856382!3d59.93860258688573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1552911506297" width="1443" height="217" style="border:0" allowfullscreen></iframe>
+        <div class="container">
           <section class="contact-with-us">
             <h2>Nёrds design studio</h2>
             <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
@@ -183,6 +184,8 @@
             <a href="" class="button write-us">Напишите нам</a>
           </section>
         </div>
+      </div>
+      <div class="container">
         <div class="main-footer-wrapper">
           <ul class="footer-social">
             <li>
