@@ -267,6 +267,8 @@ input[type="radio"].visually-hidden {
 
 /* Карта и контакты */
 
+/* Main footer */
+
 .main-footer {
   position: relative;
 }
@@ -355,6 +357,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 22px;
 }
+
+/* Main footer */
 
 /* Футер */
 
