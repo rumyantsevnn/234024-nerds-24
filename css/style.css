@@ -261,6 +261,10 @@ input[type="radio"].visually-hidden {
   height: 416px;
 }
 
+.tel-no-decoration {
+  color: #666666;
+}
+
 /* Карта и контакты */
 
 .main-footer {
