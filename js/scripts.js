@@ -7,7 +7,7 @@ write_us_link.addEventListener("click", function (evt) {
   popup.classList.add("modal-show");
   });
 
-  close.addEventListener("click", function (evt) {
+close.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.remove("modal-show");
     });

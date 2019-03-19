@@ -1406,10 +1406,15 @@ h3.work-options-title {
   overflow-y: auto;
 }
 
+.template-example-content:focus-within {
+  z-index: 3;
+}
+
 .template-example-link {
   display: block;
-  padding-top: 27px;
-  padding-bottom: 15px;
+  margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 15px;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
